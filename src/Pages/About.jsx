@@ -219,7 +219,7 @@ const About = () => {
                   <span className="font-semibold text-white">{item.title}</span>
                 </div>
                 {openIndex === index ? (
-                  <MdKeyboardArrowUp className="text-xl text-white transition duration-500" />
+                  <MdKeyboardArrowUp className="text-xl text-white  transition duration-500" />
                 ) : (
                   <MdKeyboardArrowDown className="text-xl text-white transition duration-500" />
                 )}
@@ -229,7 +229,7 @@ const About = () => {
                   initial={{ opacity: 0, height: 0 }}
                   animate={{ opacity: 1, height: "auto" }}
                   transition={{ duration: 0.5 }}
-                  className="bg-gray-700 px-4 py-3 text-white"
+                  className="bg-gray-200 px-4 py-3 text-black"
                 >
                   {item.content}
                 </motion.div>

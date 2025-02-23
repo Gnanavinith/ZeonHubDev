@@ -44,28 +44,33 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Services Section */}
-        <div className="flex flex-col items-center md:items-start">
-          <h3 className="text-xl font-semibold text-white">Our Services</h3>
-          <ul className="mt-4 space-y-2">
-            {[
-              "Web Development",
-              "Mobile App Development",
-              "UI/UX Design",
-              "Cloud Solutions",
-              "SEO & Marketing",
-            ].map((service) => (
-              <li key={service}>
-                <Link
-                  to={`/${service.toLowerCase().replace(/\s/g, "-")}`}
-                  className="text-gray-400 hover:text-yellow-400 transition duration-300"
-                >
-                  {service}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
+      {/* Services Section */}
+<div className="flex flex-col items-center md:items-start">
+  <h3 className="text-xl font-semibold text-white">Our Services</h3>
+  <ul className="mt-4 space-y-2">
+    {[
+      "App Development",
+      "Windows Application",
+      "Web Development",
+      "SEO Optimization",
+      "Graphics Designing",
+      "Social Media Marketing",
+      "Paid Ad Campaigns",
+      "New Product Development",
+      "Hosting Services"
+    ].map((service) => (
+      <li key={service}>
+        <Link
+          to={`/services`}
+          className="text-gray-400 hover:text-yellow-400 transition duration-300"
+        >
+          {service}
+        </Link>
+      </li>
+    ))}
+  </ul>
+</div>
+
 
         {/* Social Media */}
         <div className="flex flex-col items-center md:items-start">

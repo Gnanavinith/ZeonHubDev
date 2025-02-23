@@ -20,7 +20,7 @@ const steps = [
   {
     icon: <FaRocket className="text-gray-300 text-lg md:text-xl" />,
     time: "(2 TO 4 WEEKS)",
-    title: "MVP",
+    title: "MVP(Minimum Viable Product)",
     description:
       "After a few fast cycles of prototyping and iterating, we scope out the MVP. We work with the Founders and users to prioritize features that will enable an entry into the market. Our expertise in No-code tools, Generative AI APIs, and our versatile developers experienced in working on startups come in handy!",
   },

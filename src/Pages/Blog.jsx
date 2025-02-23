@@ -57,7 +57,7 @@ const Blog = () => {
       id: 8,
       title: "Artificial Intelligence",
       excerpt: "Transform business processes with AI-powered automation.",
-      image: "/src/assets/WhoAreWe.jpg",
+      image: "src/assets/WhoAreWe.jpg",
     },
     {
       id: 9,

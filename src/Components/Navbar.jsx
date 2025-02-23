@@ -21,19 +21,28 @@ const Navbar = () => {
         setScrolling(false);
       }
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Prevent body scroll when mobile menu is open
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [menuOpen]);
+
   return (
     <>
+      {/* Navbar */}
       <header
         className={`w-full fixed top-0 left-0 z-50 transition-all duration-300 ${
           scrolling ? "bg-gray-800 shadow-lg" : "bg-transparent"
         }`}
       >
-        <nav className="w-full flex justify-between items-center px-6 py-5 ">
+        <nav className="w-full flex justify-between items-center px-6 py-5">
           {/* Logo */}
           <Link
             to="/"
@@ -58,7 +67,6 @@ const Navbar = () => {
             <li>
               <Link
                 to="/schedule-meeting"
-                onClick={toggleModal}
                 className="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-500 transition flex items-center gap-2"
               >
                 Schedule A Meeting <MdOutlineScheduleSend className="text-xl" />
@@ -66,7 +74,7 @@ const Navbar = () => {
             </li>
           </ul>
 
-          {/* Mobile & Tablet Menu Button */}
+          {/* Mobile Menu Button */}
           <div className="lg:hidden">
             <button onClick={toggleMenu} className="text-3xl text-white">
               {menuOpen ? <FaTimes /> : <FaBars />}
@@ -76,10 +84,11 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         <div
-          className={`absolute top-0 left-0 w-full h-screen bg-black shadow-lg transition-transform duration-700 ease-in-out ${
+          className={`absolute top-0 left-0 w-full min-h-screen bg-gray-900 shadow-lg transition-transform duration-700 ease-in-out ${
             menuOpen ? "translate-y-0" : "-translate-y-full"
-          } lg:hidden`}
+          } lg:hidden z-50`}
         >
+          {/* Close Button */}
           <div className="flex justify-end p-5">
             <button onClick={toggleMenu} className="text-3xl text-gray-300">
               <FaTimes />
@@ -87,7 +96,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Items */}
-          <ul className="flex flex-col items-center space-y-6 p-10 text-gray-200 mt-5">
+          <ul className="flex flex-col items-center space-y-6 p-10 text-gray-300 mt-5">
             {["Home", "About", "Solutions", "Products", "Services", "Blog", "Contact"].map((item) => (
               <li key={item}>
                 <Link
@@ -100,12 +109,13 @@ const Navbar = () => {
               </li>
             ))}
             <li>
-              <button
-                onClick={toggleModal}
-                className="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-500 transition flex items-center gap-2"
+              <Link
+                to="/schedule-meeting"
+                onClick={closeMenu} // Close menu before navigating
+                className="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-500 transition flex items-center gap-2 z-[100] relative"
               >
                 Schedule A Meeting
-              </button>
+              </Link>
             </li>
           </ul>
         </div>

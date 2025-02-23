@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 // Stats Data
 const statsData = [
-  { finalNumber: 20, label: "Projects Completed", suffix: "+" },
+  { finalNumber: 50, label: "Projects Completed", suffix: "+" },
   { finalNumber: 2, label: "Years Experience", suffix: "+" },
   { finalNumber: 100, label: "Client Satisfaction", suffix: "%" },
 ];
@@ -88,7 +88,7 @@ const WhoWeAre = () => {
               animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
               whileHover={{ scale: 1.1, rotate: 2 }}
               transition={{ duration: 1, delay: index * 0.3 }}
-              className="relative bg-gray-800 p-4 rounded-xl shadow-lg w-[140px] sm:w-[160px] flex flex-col items-center 
+              className="relative bg-gray-900 p-4 rounded-xl shadow-lg w-[140px] sm:w-[160px] flex flex-col items-center 
                            hover:border-yellow-400 transition-all duration-300 group"
             >
               {/* Neon Circular Number Badge */}

@@ -64,7 +64,7 @@ const Contacts = () => {
               <div className="text-xl font-semibold text-gray-200 tracking-wide">
                 Visit Our Office
               </div>
-              <div className="text-lg text-gray-400 mt-2">
+              <div className="text-lg text-gray-400 mt-2 text-center">
                 Karumathampatti, Coimbatore
               </div>
             </div>
@@ -82,7 +82,7 @@ const Contacts = () => {
             </div>
             <div className=" gap-20 mt-10">
               {/* Left - Contact Form */}
-              <div className="bg-gradient-to-r from-gray-900 via-gray-900 to-gray-700 rounded-2xl shadow-2xl p-5">
+              <div className="rounded-2xl shadow-2xl">
                 <Email />
               </div>
 
