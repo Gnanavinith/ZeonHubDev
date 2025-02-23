@@ -52,7 +52,7 @@ const Process = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
         className="max-w-4xl mx-auto text-center bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 
-           text-transparent bg-clip-text mt-6 text-lg"
+           text-transparent bg-clip-text mt-6 text-xl font-semibold "
       >
         <p>
           Founders collaborate with us at different stages of building—

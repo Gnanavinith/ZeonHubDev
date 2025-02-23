@@ -6,7 +6,7 @@ import Solutions from './Pages/Solutions';
 import Products from './Pages/Products';
 import Services from './Pages/Services';
 import Blog from './Pages/Blog';
-import Contact from './Pages/Contacts';
+import ContactPage from './Pages/Contacts';
 import ScheduleMeeting from './Pages/ScheduleMeeting';
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
@@ -40,9 +40,9 @@ function App() {
             <Route path="/products" element={<Products />} />
             <Route path="/services" element={<Services />} />
             <Route path="/blog" element={<Blog />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/contact" element={<ContactPage />} />
             <Route path="/schedule-meeting" element={<ScheduleMeeting />} />
-            <Route path="/team" element={<Team />} />
+          
           </Routes>
           <WhatsAppButton/>
           <Footer />

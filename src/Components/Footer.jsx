@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -21,11 +22,23 @@ const Footer = () => {
         <div className="flex flex-col items-center md:items-start">
           <h3 className="text-xl font-semibold text-white">Quick Links</h3>
           <ul className="mt-4 space-y-2">
-            {["Home", "About Us", "Solutions", "Products", "Services", "Blog", "Contact"].map((link) => (
-              <li key={link}>
-                <a href={`/${link.toLowerCase().replace(/\s/g, "")}`} className="text-gray-400 hover:text-yellow-400 transition duration-300">
-                  {link}
-                </a>
+            {[
+              { name: "Home", path: "/" },
+              { name: "About Us", path: "/about" },
+              { name: "Solutions", path: "/solutions" },
+              { name: "Products", path: "/products" },
+              { name: "Services", path: "/services" },
+              { name: "Blog", path: "/blog" },
+              { name: "Contact", path: "/contact" },
+              { name: "Schedule Meeting", path: "/schedule-meeting" },
+            ].map((link) => (
+              <li key={link.name}>
+                <Link
+                  to={link.path}
+                  className="text-gray-400 hover:text-yellow-400 transition duration-300"
+                >
+                  {link.name}
+                </Link>
               </li>
             ))}
           </ul>
@@ -35,11 +48,20 @@ const Footer = () => {
         <div className="flex flex-col items-center md:items-start">
           <h3 className="text-xl font-semibold text-white">Our Services</h3>
           <ul className="mt-4 space-y-2">
-            {["Web Development", "Mobile App Development", "UI/UX Design", "Cloud Solutions", "SEO & Marketing"].map((service) => (
+            {[
+              "Web Development",
+              "Mobile App Development",
+              "UI/UX Design",
+              "Cloud Solutions",
+              "SEO & Marketing",
+            ].map((service) => (
               <li key={service}>
-                <a href={`/${service.toLowerCase().replace(/\s/g, "")}`} className="text-gray-400 hover:text-yellow-400 transition duration-300">
+                <Link
+                  to={`/${service.toLowerCase().replace(/\s/g, "-")}`}
+                  className="text-gray-400 hover:text-yellow-400 transition duration-300"
+                >
                   {service}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -50,12 +72,30 @@ const Footer = () => {
           <h3 className="text-xl font-semibold text-white">Follow Us</h3>
           <div className="flex gap-4 mt-4">
             {[
-              { icon: <FaFacebookF />, link: "#" },
-              { icon: <FaTwitter />, link: "#" },
-              { icon: <FaLinkedinIn />, link: "#" },
-              { icon: <FaInstagram />, link: "#" }
+              {
+                icon: <FaLinkedinIn />,
+                link: "https://www.linkedin.com/in/zeon-hub-6b5693352?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+              },
+              {
+                icon: <FaInstagram />,
+                link: "https://www.instagram.com/zeonhubtech?igsh=MWtkeTUwd3AyYnF2aQ==",
+              },
+              {
+                icon: <FaFacebookF />,
+                link: "https://www.facebook.com/profile.php?id=61573406556298&mibextid=ZbWKwL",
+              },
+              {
+                icon: <FaTwitter />,
+                link: "https://x.com/zeonHubtech?t=rqKk6ZQ99nZuKo0tuBYqsQ&s=09",
+              },
             ].map((social, index) => (
-              <a key={index} href={social.link} className="text-gray-400 hover:text-yellow-400 text-xl transition duration-300">
+              <a
+                key={index}
+                href={social.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-yellow-400 text-xl transition duration-300"
+              >
                 {social.icon}
               </a>
             ))}

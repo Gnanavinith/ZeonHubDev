@@ -28,7 +28,7 @@ const Faq = () => {
   };
 
   return (
-    <div className="w-full h-auto py-12 px-6 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 text-white">
+    <div className="w-full h-auto py-12 px-6 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 text-gray-200">
       <div className="max-w-5xl mx-auto flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-left gap-12">
         
         {/* FAQ Content */}
@@ -41,7 +41,7 @@ const Faq = () => {
           {/* FAQ List */}
           <div className="space-y-4">
             {faqData.map((faq, index) => (
-              <div key={index} className="rounded-lg overflow-hidden text-gray-100">
+              <div key={index} className="rounded-lg overflow-hidden text-gray-300">
                 <button
                   onClick={() => toggleFaq(index)}
                   className="w-full flex justify-between items-center p-5 text-left font-semibold bg-gray-900  transition"

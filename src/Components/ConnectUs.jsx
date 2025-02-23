@@ -11,14 +11,14 @@ const chatBubbles = [
 
 const ConnectUs = () => {
   return (
-    <section className="relative w-full h-auto bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 text-white px-6 py-16 overflow-hidden flex flex-col items-center text-center">
+    <section className="relative w-full h-auto bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700  px-6 py-16 overflow-hidden flex flex-col items-center text-center">
       
       {/* Section Title */}
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="text-4xl sm:text-5xl font-extrabold bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 text-transparent bg-clip-text"
+        className="text-4xl sm:text-5xl font-extrabold text-gray-300 "
       >
         Connect With Us
       </motion.h1>
@@ -27,7 +27,7 @@ const ConnectUs = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.3 }}
-        className="text-lg text-gray-300 mt-4 leading-relaxed max-w-lg"
+        className="text-xl font-semibold bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 text-transparent bg-clip-text mt-4 leading-relaxed max-w-lg"
       >
         Let’s bridge the gap between ideas and execution. Connect with us to 
         transform your digital presence with cutting-edge solutions.

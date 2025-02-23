@@ -39,8 +39,9 @@ import {
   SiNetlify,
   SiDigitalocean,
 } from "react-icons/si";
-import Contact from "../Components/Contact";
+
 import { Link } from "react-router-dom";
+import Contact from "../Components/Contact";
 
 // FAQ Data
 const faqItems = [
@@ -283,7 +284,11 @@ const About = () => {
           </div>
         </motion.div>
       </section>
-      <Contact />
+
+
+
+
+    <Contact/>
     </div>
   );
 };

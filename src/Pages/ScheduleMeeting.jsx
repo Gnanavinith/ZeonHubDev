@@ -3,6 +3,15 @@ import { InlineWidget } from "react-calendly";
 
 const ScheduleMeeting = () => {
   const [showText, setShowText] = useState(true);
+  const [dots, setDots] = useState("");
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setDots((prevDots) => (prevDots.length < 3 ? prevDots + "." : ""));
+    }, 800); // Change dots every second
+
+    return () => clearInterval(interval);
+  }, []);
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to the top when About page loads
   }, []);
@@ -22,7 +31,7 @@ const ScheduleMeeting = () => {
         </h2>
         {showText && (
           <p className="text-gray-300 text-sm sm:text-base text-center transition-opacity duration-500">
-            Please wait while we take you to Calendly.
+            Please wait while we take you to Calendly{dots}
           </p>
         )}
         {/* Ensure Calendly Widget is Clickable */}

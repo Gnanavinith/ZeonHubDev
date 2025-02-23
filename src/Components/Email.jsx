@@ -56,10 +56,10 @@ const Email = () => {
 
     <div className="flex flex-col md:flex-row items-center justify-between w-full h-auto bg-gradient-to-r from-gray-900 via-gray-900 to-gray-700  px-6 py-16">
     {/* Left Side Content */}
-    <div className="md:w-1/2 text-white text-center md:text-left mb-10 md:mb-0 px-4">
-      <h2 className="text-6xl font-bold  bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 
-           text-transparent bg-clip-text">Let’s talk!</h2>
-      <p className="text-gray-300 text-lg leading-relaxed mt-5">
+    <div className="md:w-1/2 text-center md:text-left mb-10 md:mb-0 px-4">
+      <h2 className="text-6xl font-bold text-gray-300 ">Let’s talk!</h2>
+      <p className="bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 
+           text-transparent bg-clip-text text-lg font-semibold  mt-5">
   Got a project in mind? Let’s collaborate and bring your ideas to life!  
   Fill out the form, and we’ll get back to you Soon.
 </p>

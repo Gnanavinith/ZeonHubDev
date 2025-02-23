@@ -23,14 +23,14 @@ const services = [
 
 const ServicesIntro = () => {
   return (
-    <section className="w-full h-auto bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 text-white flex flex-col items-center justify-center px-6 py-12 text-center">
+    <section className="w-full h-auto bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 flex flex-col items-center justify-center px-6 py-12 text-center">
       
       {/* Title */}
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="text-4xl font-bold mb-6 mt-12"
+        className="text-4xl font-bold mb-6 mt-12 text-gray-300"
       >
         Our Services
       </motion.h2>

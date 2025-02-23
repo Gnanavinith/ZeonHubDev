@@ -11,6 +11,9 @@ import Email from "../Components/Email";
 import { Link } from "react-router-dom";
 
 const Home = () => {
+   useEffect(() => {
+      window.scrollTo(0, 0); // Scroll to the top when About page loads
+    }, []);
   const texts = [
     "Transform Ideas into Reality",
     "Build Scalable Software Solutions",
