@@ -23,7 +23,7 @@ const Mantra = () => {
         transition={{ duration: 1 }}
         className="text-4xl font-bold text-center mb-6 text-gray-200"
       >
-        Our Success Mantra
+        Our Pillars of Excellence
       </motion.h2>
       
       {/* Tagline Animation */}
@@ -34,7 +34,7 @@ const Mantra = () => {
         className="text-xl font-semibold text-center max-w-3xl bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 
            text-transparent bg-clip-text"
       >
-        Innovate with Passion, build with Precision, and scale with Confidence !
+        Innovate with Passion, Build with Precision, Scale with Confidence !
       </motion.p>
 
       {/* Animated Core Values with Larger Background Images */}

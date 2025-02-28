@@ -39,7 +39,7 @@ const WhoWeAre = () => {
   return (
     <section
       ref={ref}
-      className="w-full min-h-screen bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 flex flex-col items-center justify-center text-center px-6 sm:px-10 md:px-16 lg:px-20 py-16 gap-10"
+      className="w-full h-auto bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 flex flex-col items-center justify-center text-center px-6 sm:px-10 md:px-16 lg:px-20 py-16 gap-10"
     >
       {/* Content */}
       <div className="w-full max-w-3xl">
@@ -73,7 +73,7 @@ const WhoWeAre = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.4 }}
-          className="text-gray-300 text-base"
+          className="text-gray-300 text-base mt-5"
         >
           ZeonHub started with a vision to bridge the gap between innovation and technology. What began as a small team
           of passionate developers has now grown into a full-fledged tech firm delivering high-quality digital solutions.
@@ -88,7 +88,7 @@ const WhoWeAre = () => {
               animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
               whileHover={{ scale: 1.1, rotate: 2 }}
               transition={{ duration: 1, delay: index * 0.3 }}
-              className="relative bg-gray-800 p-7 rounded-2xl shadow-2xl w-[140px] sm:w-[160px] flex flex-col items-center 
+              className="relative bg-gray-900 p-7 rounded-2xl shadow-2xl w-[140px] sm:w-[160px] flex flex-col items-center 
                            hover:border-yellow-400 transition-all duration-300 group"
             >
               {/* Neon Circular Number Badge */}
@@ -100,7 +100,7 @@ const WhoWeAre = () => {
               >
                 {numbers[index]}
                 {item.suffix}
-                <div className="absolute inset-0 animate-ping bg-blue-500 opacity-20 rounded-full"></div>
+                <div className="absolute  inset-0 animate-ping bg-blue-500 opacity-20 rounded-full"></div>
               </motion.div>
 
               {/* Stat Label */}
@@ -118,7 +118,7 @@ const WhoWeAre = () => {
           animate={{ opacity: 1, scale: 1 }}
           whileHover={{ scale: 1.1 }}
           transition={{ duration: 0.5 }}
-          className="mt-6 px-6 py-3 bg-blue-700 text-gray-100 font-bold rounded-full hover:bg-blue-500 transition duration-300 flex items-center justify-center mx-auto"
+          className="mt-10 px-6 py-3 bg-blue-600 text-gray-100 font-bold rounded-full hover:bg-blue-500 transition duration-300 flex items-center justify-center mx-auto "
         >
           Learn More <MdKeyboardArrowRight className="text-xl ml-2" />
         </motion.button>

@@ -11,7 +11,7 @@ import {
   FaDatabase,
   FaBootstrap,
   FaApple,
-  FaWindows,
+  FaWindows,FaChartLine,
   FaAws,
   FaLightbulb,
   FaUserTie,
@@ -46,40 +46,40 @@ import Contact from "../Components/Contact";
 // FAQ Data
 const faqItems = [
   {
-    title: "Expertise",
+    title: "Future-Ready Solutions",
     content:
-      "Our team has deep industry knowledge and experience, ensuring seamless execution and reliable IT solutions.",
-    icon: <FaUserTie className="text-blue-400 text-xl" />,
+      "We don’t just build for today—we engineer solutions that scale with your growth, keeping you ahead in the digital race.",
+    icon: <FaLightbulb className="text-yellow-400 text-xl" />,
   },
   {
-    title: "Creativity",
+    title: "Beyond the Ordinary",
     content:
-      "We bring fresh perspectives and creative solutions to help businesses stand out in a competitive market.",
+      "Creativity fuels our strategies. We craft unique digital experiences that leave a lasting impact on your customers.",
     icon: <FaPencilRuler className="text-pink-400 text-xl" />,
   },
   {
-    title: "Quality",
+    title: "Built for Performance",
     content:
-      "We maintain the highest quality standards to deliver robust, scalable, and efficient solutions.",
+      "Speed, security, and efficiency—our solutions are optimized to deliver peak performance without compromise.",
     icon: <FaCheckCircle className="text-green-400 text-xl" />,
   },
   {
-    title: "Collaboration",
+    title: "True Partnership, Not Just a Service",
     content:
-      "We believe in teamwork and transparency, working closely with clients to achieve outstanding results.",
+      "Your success is our mission. We collaborate closely, ensuring every solution aligns with your goals and vision.",
     icon: <FaHandshake className="text-purple-400 text-xl" />,
   },
   {
-    title: "Customer Satisfaction",
+    title: "Results That Matter",
     content:
-      "Our priority is to build long-term relationships by exceeding customer expectations.",
-    icon: <FaSmile className="text-orange-400 text-xl" />,
+      "We measure success by tangible results—higher conversions, increased efficiency, and unstoppable growth.",
+    icon: <FaChartLine className="text-blue-400 text-xl" />,
   },
   {
-    title: "Innovation",
+    title: "Digital Transformation, Simplified",
     content:
-      "We integrate the latest technologies and trends to drive digital transformation for businesses.",
-    icon: <FaLightbulb className="text-yellow-400 text-xl" />,
+      "We cut through the complexity and provide seamless, easy-to-adopt digital solutions tailored for your business.",
+    icon: <FaUserTie className="text-gray-400 text-xl" />,
   },
 ];
 
@@ -155,30 +155,30 @@ const About = () => {
       <section className="w-full min-h-screen bg-gray-900 text-white px-6 py-16 flex flex-col items-center text-center">
         {/* Header */}
         <motion.h1
-          className="text-center text-2xl sm:text-3xl font-extrabold bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 text-transparent bg-clip-text mt-10 px-6"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-        >
-          <span className="text-gray-300 block">
-            Elevating Businesses with Innovative IT Solutions:
-          </span>
-          The ZeonHub Story
-        </motion.h1>
+  className="text-center text-4xl  font-extrabold bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 text-transparent bg-clip-text mt-15 px-6"
+  initial={{ opacity: 0, y: -20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1 }}
+>
+  <span className="text-gray-300 block mb-10">
+    Empowering Businesses Through Cutting-Edge Technology
+  </span>
+  The ZeonHub Vision
+</motion.h1>
 
-        {/* Description */}
-        <motion.div
-          className="max-w-4xl mt-6 text-lg text-gray-300 leading-relaxed text-center px-6"
-          initial={{ opacity: 0.1 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
-        >
-          <p>
-            ZeonHub is built on a passion for technology, reshaping the IT
-            sector with innovation. We help businesses, from startups to
-            enterprises, achieve digital success with expert-crafted solutions.
-          </p>
-        </motion.div>
+{/* Description */}
+<motion.div
+  className="max-w-4xl mt-6 text-lg text-gray-300 leading-relaxed text-center px-6"
+  initial={{ opacity: 0.1 }}
+  animate={{ opacity: 1 }}
+  transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
+>
+  <p>
+    At ZeonHub, we blend innovation with expertise to craft impactful digital 
+    solutions. From startups to industry leaders, we drive growth and transformation 
+    through technology.
+  </p>
+</motion.div>
 
         {/* Get Started Button */}
         <Link to="/schedule-meeting">

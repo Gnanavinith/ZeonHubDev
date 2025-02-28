@@ -42,7 +42,7 @@ const Navbar = () => {
           scrolling ? "bg-gray-800 shadow-lg" : "bg-transparent"
         }`}
       >
-        <nav className="w-full flex justify-between items-center px-6 py-5">
+        <nav className="w-full flex justify-between items-center px-6 py-6">
           {/* Logo */}
           <Link
             to="/"
@@ -52,23 +52,23 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Menu */}
-          <ul className="hidden lg:flex space-x-6 items-center text-white">
+          <ul className="hidden lg:flex space-x-6 items-center text-white ">
             {["Home", "About", "Solutions", "Products", "Services", "Blog", "Contact"].map((item) => (
               <li key={item}>
                 <Link
                   to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
                   onClick={item === "Home" ? closeMenu : undefined}
-                  className="hover:text-blue-500 cursor-pointer"
+                  className="hover:text-yellow-500 cursor-pointer"
                 >
                   {item}
                 </Link>
               </li>
             ))}
             <li>
-              <Link
-                to="/schedule-meeting"
-                className="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-500 transition flex items-center gap-2"
-              >
+            <Link
+  to="/schedule-meeting"
+  className="bg-gradient-to-r from-blue-500 to-blue-700 text-white px-5 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 flex items-center"
+>
                 Schedule A Meeting <MdOutlineScheduleSend className="text-xl" />
               </Link>
             </li>

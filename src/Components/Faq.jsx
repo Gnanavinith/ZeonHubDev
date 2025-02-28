@@ -3,20 +3,24 @@ import Problem from "../assets/Problem.png";
 
 const faqData = [
   {
-    question: "How can The ZeonHub help my business?",
-    answer: "ZeonHub provides tailored digital solutions that streamline your operations, enhance customer engagement, and drive business growth."
+    question: "Why should I choose ZeonHub for my digital transformation?",
+    answer: "At ZeonHub, we don’t just build software—we craft digital experiences that accelerate growth, optimize efficiency, and keep you ahead of the competition."
   },
   {
-    question: "How can I initiate a partnership with The ZeonHub?",
-    answer: "You can initiate a partnership by contacting us through our website or scheduling a meeting with our team."
+    question: "How can ZeonHub turn my idea into reality?",
+    answer: "From brainstorming to deployment, we guide you through every step—offering strategic insights, expert development, and scalable solutions tailored to your vision."
   },
   {
-    question: "What sets ZeonHub apart from other digital transformation companies?",
-    answer: "Our expertise in cutting-edge technologies, customer-centric approach, and tailored solutions make us stand out."
+    question: "What industries does ZeonHub specialize in?",
+    answer: "We cater to a wide range of industries, including e-commerce, healthcare, fintech, SaaS, and startups, delivering cutting-edge tech solutions that drive impact."
   },
   {
-    question: "How do I get started with ZeonHub?",
-    answer: "Simply reach out to us via our contact page, and our team will guide you through the process."
+    question: "How does ZeonHub ensure project success?",
+    answer: "We follow an agile methodology, providing transparent communication, iterative development, and data-driven decisions to deliver outstanding results."
+  },
+  {
+    question: "What’s the first step to working with ZeonHub?",
+    answer: "Let’s talk! Schedule a free consultation, and we’ll analyze your needs, propose a strategy, and help you take the next step toward digital excellence."
   }
 ];
 

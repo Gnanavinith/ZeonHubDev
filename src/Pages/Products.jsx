@@ -141,35 +141,49 @@ const Products = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
-            {/* Featured Web Application */}
-            <div className="bg-gray-800 rounded-xl shadow-lg text-center p-8 border ">
-              <h2 className="text-white text-xl font-bold">Web Application</h2>
-              <p className="text-gray-300 mt-2">
-                Bespoke web solutions tailored to your business needs.
-              </p>
-              <img
-                src={WebApplications}
-                alt="Featured Web Application"
-                className="w-full h-56 object-cover rounded-lg mt-4 shadow-lg"
-              />
-            </div>
+  {/* Featured Web Application */}
+  <div className="bg-gray-800 rounded-xl shadow-lg text-center p-8 border border-gray-200 transition duration-300 hover:shadow-2xl">
+    <h2 className="text-white text-2xl font-semibold">Web Application</h2>
+    <p className="text-gray-400 mt-2">
+      Bespoke web solutions tailored to your business needs.
+    </p>
+    <img
+      src={WebApplications}
+      alt="Featured Web Application"
+      className="w-full h-56 object-cover rounded-lg mt-4 shadow-lg"
+    />
+    <a
+      href="https://stylio.netlify.app/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block mt-6 px-6 py-3 text-white bg-blue-600 hover:bg-blue-500 rounded-lg text-sm font-medium transition duration-300"
+    >
+      View Our Previous Project
+    </a>
+  </div>
 
-            {/* Featured Windows Application */}
-            <div className="bg-gray-800 rounded-xl shadow-lg text-center p-8 border ">
-              <h2 className="text-white text-xl font-bold">
-                Windows Application
-              </h2>
-              <p className="text-gray-300 mt-2">
-                Powerful desktop applications designed for performance and
-                efficiency.
-              </p>
-              <img
-                src={windows}
-                alt="Featured Windows Application"
-                className="w-full h-56 object-cover rounded-lg mt-4 shadow-lg"
-              />
-            </div>
-          </div>
+  {/* Featured Windows Application */}
+  <div className="bg-gray-800 rounded-xl shadow-lg text-center p-8 border border-gray-200 transition duration-300 hover:shadow-2xl">
+    <h2 className="text-white text-2xl font-semibold">Windows Application</h2>
+    <p className="text-gray-400 mt-2">
+      Powerful desktop applications designed for performance and efficiency.
+    </p>
+    <img
+      src={windows}
+      alt="Featured Windows Application"
+      className="w-full h-56 object-cover rounded-lg mt-4 shadow-lg"
+    />
+    <a
+      href="https://www.boxbilling.org/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block mt-6 px-6 py-3 text-white bg-blue-600 hover:bg-blue-500 rounded-lg text-sm font-medium transition duration-300"
+    >
+      View Our Previous Project
+    </a>
+  </div>
+</div>
+
         </motion.div>
 
         {/* Product Grid */}

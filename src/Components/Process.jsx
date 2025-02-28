@@ -8,7 +8,7 @@ const steps = [
     time: "(0 TO 1 WEEK)",
     title: "Discovery",
     description:
-      "Our product and design team works with founders who've just set out on the adventure to assist in user discovery; Iterating, narrowing, and refining the problem statement they're working on. We help plan user discovery interviews, contextual inquiry sessions, and surveys, map customer journeys, and pain points, and identify specific opportunities to begin solving.",
+      "Our product and design team works with founders who've just set out on the adventure to assist in user discovery. Iterating, narrowing, and refining the problem statement they're working on. We help plan user discovery interviews, contextual inquiry sessions, and surveys, map customer journeys, and pain points, and identify specific opportunities to begin solving.",
   },
   {
     icon: <FaPencilRuler className="text-gray-300 text-lg md:text-xl" />,
@@ -35,7 +35,7 @@ const steps = [
 
 const Process = () => {
   return (
-    <div className="w-full min-h-screen bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 px-6 py-16">
+    <div className="w-full h-auto bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 px-6 py-16">
       {/* Page Title */}
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
@@ -55,8 +55,7 @@ const Process = () => {
            text-transparent bg-clip-text mt-6 text-xl font-semibold "
       >
         <p>
-          Founders collaborate with us at different stages of building—
-          discovery, prototyping, MVP, or directly scaling!
+        Our collaboration with founders spans multiple stages—discovery, prototyping, MVP, and scaling!
         </p>
       </motion.div>
 
