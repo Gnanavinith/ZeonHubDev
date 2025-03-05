@@ -14,7 +14,7 @@ const Preloader = () => {
         stroke-length="0.15"
         bg-opacity="0.1"
         speed="1.3"
-        color="white"
+        color="gold"
       ></l-infinity>
     </div>
   );

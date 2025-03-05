@@ -76,7 +76,7 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <div className="lg:hidden">
-            <button onClick={toggleMenu} className="text-3xl text-white">
+            <button onClick={toggleMenu} className="text-3xl text-yellow-600">
               {menuOpen ? <FaTimes /> : <FaBars />}
             </button>
           </div>
@@ -90,7 +90,7 @@ const Navbar = () => {
         >
           {/* Close Button */}
           <div className="flex justify-end p-5">
-            <button onClick={toggleMenu} className="text-3xl text-gray-300">
+            <button onClick={toggleMenu} className="text-3xl text-yellow-600">
               <FaTimes />
             </button>
           </div>

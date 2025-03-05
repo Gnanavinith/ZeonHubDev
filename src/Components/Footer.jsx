@@ -1,5 +1,6 @@
 import React from "react";
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { FaFacebookF,FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { RiTwitterXLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -79,19 +80,19 @@ const Footer = () => {
             {[
               {
                 icon: <FaLinkedinIn />,
-                link: "https://www.linkedin.com/in/zeon-hub-6b5693352?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+                link: "https://www.linkedin.com/company/zeonhub/posts/?feedView=all",
               },
               {
                 icon: <FaInstagram />,
-                link: "https://www.instagram.com/zeonhubtech?igsh=MWtkeTUwd3AyYnF2aQ==",
+                link: "https://www.instagram.com/zeonhubofficial/",
               },
               {
                 icon: <FaFacebookF />,
                 link: "https://www.facebook.com/profile.php?id=61573406556298&mibextid=ZbWKwL",
               },
               {
-                icon: <FaTwitter />,
-                link: "https://x.com/zeonHubtech?t=rqKk6ZQ99nZuKo0tuBYqsQ&s=09",
+                icon: <RiTwitterXLine />,
+                link: "https://x.com/i/flow/login?redirect_after_login=%2FZeonHubOfficial",
               },
             ].map((social, index) => (
               <a
