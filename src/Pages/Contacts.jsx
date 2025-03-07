@@ -34,10 +34,10 @@ const Contacts = () => {
                 Call Us Anytime
               </div>
               <a
-                href="tel:+919344439060"
+                href="tel:+916374890392"
                 className="text-lg text-blue-400 mt-2 hover:underline"
               >
-                +91 93444 39060
+                +91 6374890392
               </a>
             </div>
 
@@ -51,7 +51,7 @@ const Contacts = () => {
                   Drop Us a Mail
                 </div>
                 <div className="text-lg text-gray-400 mt-2">
-                  Zeonhubofficial@gmail.com
+                  zeonhubofficial@gmail.com
                 </div>
               </div>
             </a>

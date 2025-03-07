@@ -9,7 +9,7 @@ const WhatsAppButton = () => {
 
       {/* WhatsApp Button */}
       <a
-        href="https://wa.me/9344439060"
+        href="https://wa.me/6374890392"
         target="_blank"
         rel="noopener noreferrer"
         className="relative flex items-center justify-center bg-green-500 p-3 rounded-full s shadow-green-500 transition-transform transform hover:scale-110"
