@@ -38,6 +38,7 @@ import {
   SiVercel,
   SiNetlify,
   SiDigitalocean,
+  
 } from "react-icons/si";
 
 import { Link } from "react-router-dom";
@@ -86,6 +87,8 @@ const faqItems = [
 // Technologies Data
 const technologies = [
   { name: "React", icon: <FaReact className="text-blue-400 text-4xl" /> },
+  { name: "ReactNative", icon: <FaReact className="text-blue-400 text-4xl" /> },
+  
   { name: "Redux", icon: <SiRedux className="text-purple-500 text-4xl" /> },
   { name: "Node.js", icon: <FaNodeJs className="text-green-500 text-4xl" /> },
   {

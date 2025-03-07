@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Problem from "../assets/Problem.png";
-
+import { motion, AnimatePresence } from "framer-motion";
 const faqData = [
   {
     question: "Why should I choose ZeonHub for my digital transformation?",
@@ -42,23 +42,36 @@ const Faq = () => {
             Dedicated to helping with all of your needs.
           </p>
 
-          {/* FAQ List */}
           <div className="space-y-4">
-            {faqData.map((faq, index) => (
-              <div key={index} className="rounded-lg overflow-hidden text-gray-300">
-                <button
-                  onClick={() => toggleFaq(index)}
-                  className="w-full flex justify-between items-center p-5 text-left font-semibold bg-gray-900  transition"
-                >
-                  {faq.question}
-                  <span>{openIndex === index ? "▲" : "▼"}</span>
-                </button>
-                {openIndex === index && (
-                  <div className="p-4 bg-gray-200 border-t border-gray-600 text-black">{faq.answer}</div>
-                )}
-              </div>
-            ))}
-          </div>
+  {faqData.map((faq, index) => (
+    <div key={index} className="rounded-lg overflow-hidden text-gray-300">
+      {/* Toggle Button */}
+      <button
+        onClick={() => toggleFaq(index)}
+        className="w-full flex justify-between items-center p-5 text-left font-semibold bg-gray-900 transition duration-300"
+      >
+        {faq.question}
+        <span>{openIndex === index ? "▲" : "▼"}</span>
+      </button>
+
+      {/* Animated Answer Section */}
+      <AnimatePresence>
+        {openIndex === index && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="p-4 bg-gray-200 border-t border-gray-600 text-black"
+          >
+            {faq.answer}
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  ))}
+</div>
+
         </div>
 
         {/* Image: Hidden on Small Screens, Right Side on Large Screens */}

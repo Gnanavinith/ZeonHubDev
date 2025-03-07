@@ -27,9 +27,9 @@ const Email = () => {
     if (!validateForm()) return;
     setLoading(true);
 
-    const serviceId = "service_cmc81ur";
-    const templateId = "template_tptct5m";
-    const publicKey = "K_pomTZqQOOFYmBI3";
+    const serviceId = "service_cj3zjnu";
+    const templateId = "template_dxowdcc";
+    const publicKey = "8xd-WGUEaxrhBsGCg";
 
     const templateParams = { from_name: name, from_email: email, from_number: mobile, message: message };
 
